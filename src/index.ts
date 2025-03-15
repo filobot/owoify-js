@@ -12,7 +12,7 @@ import {
  * @param v word to owoify
  * @param level level of owo-ness. (owo -> uwu -> uvu)
  */
-export default function owoify(v: string, level: string = 'owo'): string {
+export function owoify(v: string, level: string = 'owo'): string {
   let whitespace: string[] = v.split(/[^\s]+/g);
   let words: Word[] = v.split(/\s+/g).map(x => new Word(x));
   words = words.map(x => {
