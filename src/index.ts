@@ -39,5 +39,3 @@ export function uwuify(v: string): string {
 export function uvuify(v: string): string {
   return owoify(v, 'uvu');
 }
-
-export default { owoify, uwuify, uvuify };
